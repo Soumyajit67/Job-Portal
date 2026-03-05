@@ -8,9 +8,16 @@ import { setSearchedQuery } from '@/redux/jobSlice';
 const category = [
     "Frontend Developer",
     "Backend Developer",
-    "Data Science",
+    "Data Scientist",
     "Graphic Designer",
-    "FullStack Developer"
+    "FullStack Developer",
+    "UI/UX Designer",
+    "DevOps Engineer",
+    "Product Manager",
+    "Mobile App Developer",
+    "Cybersecurity Specialist"
+
+
 ]
 
 const CategoryCarousel = () => {
@@ -28,7 +35,7 @@ const CategoryCarousel = () => {
                     {
                         category.map((cat, index) => (
                             <CarouselItem className="md:basis-1/2 lg-basis-1/3">
-                                <Button onClick={()=>searchJobHandler(cat)} variant="outline" className="rounded-full">{cat}</Button>
+                                <Button onClick={()=>searchJobHandler(cat)} variant="outline"  className="rounded-full ">{cat}</Button>
                             </CarouselItem>
                         ))
                     }
